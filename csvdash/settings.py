@@ -78,13 +78,16 @@ WSGI_APPLICATION = 'csvdash.wsgi.application'
 DATABASES = {
 	'default': {
 		'ENGINE': 'django.db.backends.mysql',
-		'NAME': os.getenv('DB_NAME'),
-		'USER': os.getenv('USER'),
-		'PASSWORD': os.getenv('PASSWORD'),
-		'HOST': os.getenv('HOST'),
-		'PORT': os.getenv('PORT'),
+		'NAME': 'smit_database',
+		'USER': 'smit_admin',
+		'PASSWORD': 'qazwsxplm',
+		'HOST': 'db4free.net',
+		'PORT': '3306',
 	}
 }
+
+
+
 # https://www.db4free.net/phpMyAdmin/index.php?route=/sql&db=smit_database&table=home_document&pos=0
 
 
