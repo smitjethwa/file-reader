@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-+j@zbrv4jrvkn)*1gz!637_tg2g&cfq9tkvka816b8ufi8kygu
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app']
 
 
 # Application definition
@@ -75,25 +75,25 @@ WSGI_APPLICATION = 'csvdash.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-# DATABASES = {
-# 	'default': {
-# 		'ENGINE': 'django.db.backends.mysql',
-# 		'NAME': 'smit_database',
-# 		'USER': 'smit_admin',
-# 		'PASSWORD': 'qazwsxplm',
-# 		'HOST':'db4free.net',
-# 		'PORT':'3306',
-# 	}
-# }
+DATABASES = {
+	'default': {
+		'ENGINE': 'django.db.backends.mysql',
+		'NAME': 'smit_database',
+		'USER': 'smit_admin',
+		'PASSWORD': 'qazwsxplm',
+		'HOST':'db4free.net',
+		'PORT':'3306',
+	}
+}
 # https://www.db4free.net/phpMyAdmin/index.php?route=/sql&db=smit_database&table=home_document&pos=0
 
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
 
 
 # Password validation
