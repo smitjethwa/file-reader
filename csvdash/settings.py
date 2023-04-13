@@ -78,11 +78,11 @@ WSGI_APPLICATION = 'csvdash.wsgi.application'
 DATABASES = {
 	'default': {
 		'ENGINE': 'django.db.backends.mysql',
-		'NAME': 'smit_database',
-		'USER': 'smit_admin',
-		'PASSWORD': 'qazwsxplm',
-		'HOST': 'db4free.net',
-		'PORT': '3306',
+		'NAME': '',
+		'USER': '',
+		'PASSWORD': '',
+		'HOST': '',
+		'PORT': '',
 	}
 }
 
